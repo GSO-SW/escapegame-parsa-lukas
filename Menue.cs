@@ -28,7 +28,8 @@ namespace BFT32_Escape_Game
                     case "2":
                         return;
                     default:
-                        Console.WriteLine("Ungültige Auswahl. Bitte versuchen Sie es erneut.");
+                        Console.WriteLine("\nUngültige Auswahl. Bitte versuchen Sie es erneut.");
+                        Console.ReadKey();
                         break;
                 }
             }

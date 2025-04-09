@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using ExitGame;
@@ -42,8 +43,11 @@ namespace BFT32_Escape_Game
                 
                 Console.Write("\nWähle eine Option: ");
                 var choice = Console.ReadLine();
-                
-                if (choice == "6") break;
+
+                if (choice == "6")
+                {
+                    break;
+                }
                 
                 if (choice == "5")
                 {
@@ -56,7 +60,8 @@ namespace BFT32_Escape_Game
                     }
 
                     Console.Clear();
-                    Console.WriteLine("\nEr revolutionierte Elektroautos, eroberte den Weltraum und kaufte ein soziales Netzwerk.");
+                    Console.WriteLine("\nEr revolutionierte Elektroautos, eroberte den Weltraum und kaufte ein soziales Netzwerk." +
+                                      "\nTipp: Gesucht ist sein Bekannter Name.");
                     Console.WriteLine("Die gefundenen Buchstaben sind: " + string.Join("", foundLetters));
                     
                     while (true)
@@ -69,7 +74,7 @@ namespace BFT32_Escape_Game
                             Console.WriteLine("\nGratulation! Du hast den richtigen Namen gefunden!");
                             Console.WriteLine("Du bist entkommen!");
                             Console.ReadKey();
-                            return;
+                            Program.Main();
                         }
                         else
                         {
