@@ -3,45 +3,59 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ExitGame;
 
 namespace BFT32_Escape_Game
 {
     static class Navigation
     {
-        //Methode zur Navigation zwischen den Bahnen
-        public static int Next()
+        public static void ShowGameMenu(List<string> foundLetters, List<Lager.Raum> rooms)
         {
-            int naechsterBahn = 0;
-            bool gueltigeEingabe = false;
-
-            //Solange die Eingabe ungültig ist, wird der Benutzer aufgefordert, eine gültige Zahl einzugeben
-            while (!gueltigeEingabe)
+            Console.Clear();
+            Console.WriteLine("\nDu bist in der U-Bahn gefangen!");
+            Console.WriteLine("Gefundene Buchstaben: " + string.Join("", foundLetters));
+            Console.WriteLine("\nVerfügbare Bahnen:");
+            
+            for (int i = 0; i < rooms.Count; i++)
             {
-                //Aktuellen Status anzeigen
-                Globals.ClearAndShowStatus();
-                Console.WriteLine("In welchen Bahn möchtest du gehen?");
-                Console.WriteLine("1 = Erster Bahn");
-                Console.WriteLine("2 = Zweite Bahn");
-                Console.WriteLine("3 = Dritte Bahn");
-                Console.WriteLine("4 = Vierte Bahn");
-                Console.Write("\nBitte geben Sie eine Zahl ein: ");
-
-                string eingabe = Console.ReadLine();
-                //Überprüfen, ob die Eingabe eine gültige Zahl zwischen 1 und 4 ist
-                if (int.TryParse(eingabe, out int BahnNummer) && BahnNummer >= 1 && BahnNummer <= 4)
-                {
-                    naechsterBahn = BahnNummer;
-                    gueltigeEingabe = true;
-                }
-                else
-                {
-                    Console.WriteLine("\nBitte gib eine Zahl zwischen 1 und 4 ein.");
-                    Console.WriteLine("Drücke eine beliebige Taste zum Fortfahren...");
-                    Console.ReadKey();
-                }
+                Console.WriteLine($"{i + 1}. U-Bahn {rooms[i].BahnNummer}" + 
+                    (rooms[i].IstGefunden ? " (Buchstaben bereits gefunden)" : ""));
             }
+            
+            if (foundLetters.Count == 4)
+            {
+                Console.WriteLine("\n5. Rätsel lösen");
+            }
+            else
+            {
+                Console.WriteLine("\n5. Rätsel lösen (noch nicht verfügbar)");
+            }
+            Console.WriteLine("6. Zurück zum Hauptmenü");
+            
+            Console.Write("\nWähle eine Option: ");
+        }
 
-            return naechsterBahn;
+        public static void HandleChoice(string choice, List<Lager.Raum> rooms, List<string> foundLetters)
+        {
+            switch (choice)
+            {
+                case "1":
+                case "2":
+                case "3":
+                case "4":
+                    Spiel.HandleBahn(int.Parse(choice), rooms, foundLetters);
+                    break;
+                case "5":
+                    Spiel.HandleLoesungswort(foundLetters);
+                    break;
+                case "6":
+                    Spiel.Beenden();
+                    break;
+                default:
+                    Console.WriteLine("\nUngültige Auswahl. Bitte versuchen Sie es erneut.");
+                    Console.ReadKey();
+                    break;
+            }
         }
     }
 }
