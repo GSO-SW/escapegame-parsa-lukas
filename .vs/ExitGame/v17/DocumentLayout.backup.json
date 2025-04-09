@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{8BD476DE-7523-CAF3-4BC3-9DF8FD109E49}|ExitGame.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8BD476DE-7523-CAF3-4BC3-9DF8FD109E49}|ExitGame.csproj|c:\\users\\lukas\\source\\repos\\escapegame-parsa-lukas\\menue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BD476DE-7523-CAF3-4BC3-9DF8FD109E49}|ExitGame.csproj|solutionrelative:menue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8BD476DE-7523-CAF3-4BC3-9DF8FD109E49}|ExitGame.csproj|c:\\users\\lukas\\source\\repos\\escapegame-parsa-lukas\\lager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8BD476DE-7523-CAF3-4BC3-9DF8FD109E49}|ExitGame.csproj|solutionrelative:lager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,20 +34,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menue.cs",
+              "DocumentMoniker": "C:\\Users\\lukas\\source\\repos\\escapegame-parsa-lukas\\Menue.cs",
+              "RelativeDocumentMoniker": "Menue.cs",
+              "ToolTip": "C:\\Users\\lukas\\source\\repos\\escapegame-parsa-lukas\\Menue.cs",
+              "RelativeToolTip": "Menue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T08:33:57.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lukas\\source\\repos\\escapegame-parsa-lukas\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\lukas\\source\\repos\\escapegame-parsa-lukas\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T08:57:28.378Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Lager.cs",
               "DocumentMoniker": "C:\\Users\\lukas\\source\\repos\\escapegame-parsa-lukas\\Lager.cs",
               "RelativeDocumentMoniker": "Lager.cs",
@@ -51,7 +68,8 @@
               "RelativeToolTip": "Lager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T08:57:31.176Z"
+              "WhenOpened": "2025-03-11T08:57:31.176Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -13,7 +13,7 @@ namespace BFT32_Escape_Game
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("Herzlich Willkommen zum Geisterspiel. Bitte wählen Sie eine Option:");
+                Console.WriteLine("Herzlich Willkommen zum U-Bahn Escape Game. Bitte wählen Sie eine Option:");
                 Console.WriteLine("1. Spiel beginnen");
                 Console.WriteLine("2. Beenden");
                 Console.Write("Bitte geben Sie eine Zahl ein: ");
@@ -24,7 +24,6 @@ namespace BFT32_Escape_Game
                 {
                     case "1":
                         Spiel.Spielstart();
-                        
                         break;
                     case "2":
                         return;

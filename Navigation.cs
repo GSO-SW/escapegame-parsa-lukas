@@ -14,8 +14,10 @@ namespace BFT32_Escape_Game
             int naechsterBahn = 0;
             bool gueltigeEingabe = false;
 
+            //Solange die Eingabe ungültig ist, wird der Benutzer aufgefordert, eine gültige Zahl einzugeben
             while (!gueltigeEingabe)
             {
+                //Aktuellen Status anzeigen
                 Globals.ClearAndShowStatus();
                 Console.WriteLine("In welchen Bahn möchtest du gehen?");
                 Console.WriteLine("1 = Erster Bahn");
@@ -25,6 +27,7 @@ namespace BFT32_Escape_Game
                 Console.Write("\nBitte geben Sie eine Zahl ein: ");
 
                 string eingabe = Console.ReadLine();
+                //Überprüfen, ob die Eingabe eine gültige Zahl zwischen 1 und 4 ist
                 if (int.TryParse(eingabe, out int BahnNummer) && BahnNummer >= 1 && BahnNummer <= 4)
                 {
                     naechsterBahn = BahnNummer;
