@@ -10,7 +10,6 @@ public class Program
 {
     public static void Main()
     {
-        Raum.ErstelleRaeume();
         Menue.MenueAnzeigen();
     }
 }
