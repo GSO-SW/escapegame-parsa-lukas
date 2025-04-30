@@ -14,10 +14,10 @@ namespace BFT32_Escape_Game
             {
                 Console.Clear();
                 Console.WriteLine("Herzlich Willkommen zum U-Bahn Escape Game. Bitte wählen Sie eine Option:");
-                Console.WriteLine("1. Spiel beginnen");
+                Console.WriteLine("\n1. Spiel beginnen");
                 Console.WriteLine("2. Spielanleitung");
                 Console.WriteLine("3. Beenden");
-                Console.Write("Bitte geben Sie eine Zahl ein: ");
+                Console.Write("\nBitte geben Sie eine Zahl ein: ");
                 
                 string auswahl = Console.ReadLine();
 

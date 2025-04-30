@@ -18,7 +18,7 @@ namespace BFT32_Escape_Game
             
             for (int i = 0; i < rooms.Count; i++)
             {
-                Console.WriteLine($"{i + 1}. U-Bahn {rooms[i].BahnNummer}" + 
+                Console.WriteLine($"{i + 1}. Bahn {rooms[i].BahnNummer}" + 
                     (rooms[i].IstGefunden ? " (Buchstaben bereits gefunden)" : ""));
             }
             
